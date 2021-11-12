@@ -1,0 +1,13 @@
+# Files to ignore from lint process
+/node_modules
+node_modules/
+npm-debug.log
+.DS_Store
+dist/css
+dist/js
+dist/assets
+dist
+storybook-static
+jest-coverage
+cypress
+.npmrc

@@ -1,16 +1,196 @@
-html,
-body {
+html {
+  width: 100%;
+  height: 100%;
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  font-synthesis: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@supports (font: -apple-system-body) {
+  @media (max-width: 1023px) {
+    html {
+      font: -apple-system-body;
+    }
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  text-align: left;
+  font-weight: 400;
+  font-family: "Source Sans Pro", "Open Sans", "Gill Sans MT", "Gill Sans",
+    Corbel, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.41rem;
+  letter-spacing: 0.015625rem;
+  overflow-x: hidden;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+#__next {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+}
+
+::selection {
+  color: white;
+  background: #1fd1f9;
 }
 
 * {
-  box-sizing: border-box;
+  font-synthesis: inherit;
+  font-smoothing: inherit;
+  box-sizing: inherit;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+address {
+  font-style: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+.touch {
+  cursor: pointer;
+}
+
+a,
+a:active {
+  color: inherit;
+  text-decoration: none;
+  transition: all 100ms ease-out;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+p {
+  margin: 0 0 0.625rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  font-family: inherit;
+}
+
+a,
+area,
+button,
+[role="button"],
+input:not([type="range"]),
+label,
+select,
+summary,
+textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+button {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.015625rem;
+}
+
+h2 {
+  font-size: 1.5625rem;
+  line-height: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.009375rem;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+small {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.00625rem;
+}
+
+caption {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  letter-spacing: 0.025rem;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.3125rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.015625rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.625rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+    letter-spacing: -0.015625rem;
+  }
+  h2 {
+    font-size: 2.375rem;
+    line-height: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
 }
